@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style3.css">
+        <script src="funciones.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="login.html"></form>
+            <fieldset>
+                <p>nombre</p><input type="text"  id="nom" required><br>
+                <p>apellido</p><input type="text" id="ape" required><br>
+                <p>dni</p><input type="text" id="dni" required><br>
+                <p>mail</p><input type="text" id="mail" required><br>
+                <p>contacto</p> <input type="text" id="cont" required><br>
+
+                <input type="submit" value="ingresar"  
+                        onclick=" 
+                                if(validartexto('nom')==true && 
+                                    validartexto('ape')==true &&
+                                    validarnum('cont')==true && 
+                                    validarnum('dni')==true &&
+                                    validarmail('mail')==true) {
+                                    alert('ingreso al sistema')     
+                                    }
+                                else{
+                                        alert('no se pudo ingresar')
+                                        event.preventDefault()//detener acción por defecto
+                                    }
+                                "
+                />
+
+                <input type="reset" value="borrar"/>
+            </fieldset>
+        </form>
+    </body>
+</html>

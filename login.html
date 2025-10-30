@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+    <script src="funciones.js"></script>
+</head>
+<body>
+    <form action="https://tecnica6moron.edu.ar">
+                <div class="fond">
+                    <img src="telon-de-fondo-de-hojas-verdes.jpg" alt="">
+                            <div class="bor">
+                            <legend>datos de ingreso</legend>
+                                <div class="usuario">
+                                    <input type="text" id="txtuse" ><br>
+                                </div>
+
+                                <div class="contraseña">
+                                    <input type="password">
+                                </div>
+
+                                <div class="btn">
+                                    <input type="submit" value="ingresar"  onclick="if(validartexto('txtuse')==true)
+                                                                                        alert('ingreso al sistema')
+                                                                                    else{
+                                                                                        
+                                                                                        alert('usuario invalido')
+                                                                                        event.preventDefault()//detener acción por defecto
+                                                                                        }
+                                                                                    "/>
+                                    <input type="reset">
+                                </div> 
+                                <p> si no esta registrado aga clic <a href="registro.html">aqui</a> </p>
+                            </div>
+                </div>
+        </form>
+    </body>
+</html>
