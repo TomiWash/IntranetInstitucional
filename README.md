@@ -7,4 +7,4 @@ Incluye animaciones, menús desplegables y diseño responsive.
 2. Abrir el archivo `index.html` en tu navegador  
 
 ## 🔗 URL del repositorio
-[https://github.com/TomiWash/IntranetiInstitucional]
+[https://github.com/TomiWash/IntranetInstitucional]
